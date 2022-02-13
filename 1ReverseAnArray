@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    int size; 
+    cout << "\n" << "Enter the size of the array: " << endl;
+    cin >> size;       //Gets input from user for the size of the array
+    
+    int a[size];       //initializing an array with the size inputed by user
+
+    cout << "\n" << "Enter each element of the array (each value separtated by a space): " << endl;
+    
+    for(int i = 0; i <= size; i++){      //Gets elements entered by the user and adds them to an array
+        cin >> a[i];
+    }
+    
+    cout << "\n" << "Elements Reversed: " << endl;       //Outputs the contents of the array in reverse order
+    for(int j = size; j >= 0; j--){                         //from the last element (n) to the first (0)
+        cout << a[j] << " ";
+    }
+    
+     
+    return 0;
+}
